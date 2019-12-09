@@ -55,7 +55,7 @@ function myFunction() {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            // document.querySelectorAll(".name")[0].innerHTML = characterInfo.name
+            document.querySelectorAll(".accordion")[0].innerHTML = characterInfo.name
             document.querySelectorAll(".height")[0].innerHTML = "height: " + characterInfo.height
             document.querySelectorAll(".weight")[0].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[0].innerHTML = "hair color: " + characterInfo.hair_color
@@ -67,7 +67,7 @@ function myFunction() {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            // document.querySelectorAll(".name")[1].innerHTML = characterInfo.name
+            document.querySelectorAll(".accordion")[1].innerHTML = characterInfo.name
             document.querySelectorAll(".height")[1].innerHTML = "height: " + characterInfo.height
             document.querySelectorAll(".weight")[1].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[1].innerHTML = "hair color: " + characterInfo.hair_color
@@ -79,7 +79,7 @@ function myFunction() {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            // document.querySelectorAll(".name")[2].innerHTML = characterInfo.name
+            document.querySelectorAll(".accordion")[2].innerHTML = characterInfo.name
             document.querySelectorAll(".height")[2].innerHTML = "height: " + characterInfo.height
             document.querySelectorAll(".weight")[2].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[2].innerHTML = "hair color: " + characterInfo.hair_color
@@ -91,7 +91,7 @@ function myFunction() {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            // document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
+            document.querySelectorAll(".accordion")[3].innerHTML = characterInfo.name
             document.querySelectorAll(".height")[3].innerHTML = "height: " + characterInfo.height
             document.querySelectorAll(".weight")[3].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[3].innerHTML = "hair color: " + characterInfo.hair_color
@@ -103,7 +103,7 @@ function myFunction() {
     .then(characterInfo => {
         console.log(characterInfo)
         
-        // document.querySelectorAll(".name")[4].innerHTML = characterInfo.name
+        document.querySelectorAll(".accordion")[4].innerHTML = characterInfo.name
         document.querySelectorAll(".height")[4].innerHTML = "height: " + characterInfo.height
         document.querySelectorAll(".weight")[4].innerHTML = "weight: " + characterInfo.mass
         document.querySelectorAll(".hair-color")[4].innerHTML = "hair color: " + characterInfo.hair_color
@@ -115,7 +115,7 @@ function myFunction() {
     .then(characterInfo => {
         console.log(characterInfo)
         
-        // document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
+        document.querySelectorAll(".accordion")[5].innerHTML = characterInfo.name
         document.querySelectorAll(".height")[5].innerHTML = "height: " + characterInfo.height
         document.querySelectorAll(".weight")[5].innerHTML = "weight: " + characterInfo.mass
         document.querySelectorAll(".hair-color")[5].innerHTML = "hair color: " + characterInfo.hair_color
