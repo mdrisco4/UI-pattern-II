@@ -1,7 +1,15 @@
 /* Style the buttons that are used to open and close the accordion panel */
+body {
+    background-image: url("../images/backgound6.jpeg");
+    background-size: cover;
+    /* background-color: darksalmon; */
+}
+
+
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: plum;
+    color: darkred;
+    opacity: .75;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -31,7 +39,9 @@
 
 h1 {
     font-family: 'Geostar Fill', cursive;
-    font-size: 56px;
+    font-size: 75px;
+    text-align: center;
+    color: deeppink;
 }
 nav {
     display: flex;
@@ -39,7 +49,12 @@ nav {
 }
 button {
     height: 45px;
-    width: 81px;
+    width: 240px;
+    background-color: darkgoldenrod;
+    color: greenyellow;
+    border-radius: 12px;
+    font-size: 20px;
+    vertical-align: middle;
 }
 .charsect {
     /* float: right; */

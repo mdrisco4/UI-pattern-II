@@ -43,9 +43,13 @@ function myFunction() {
  let randomPeep3 = "people/15"
  const randButton4 = document.querySelector(".randomButton3")
  let randomPeep4 = "people/20"
+ const randButton5 = document.querySelector(".randomButton3")
+ let randomPeep5 = "people/1"
+ const randButton6 = document.querySelector(".randomButton3")
+ let randomPeep6 = "people/5"
 
 
- randButton1.addEventListener("click", function () {
+//  randButton1.addEventListener("click", function () {
     fetch(url + randomPeep1)
         .then(res => res.json())
         .then(characterInfo => {
@@ -56,8 +60,8 @@ function myFunction() {
             document.querySelectorAll(".weight")[0].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[0].innerHTML = "hair color: " + characterInfo.hair_color
         })
-})
-randButton2.addEventListener("click", function () {
+// })
+// randButton2.addEventListener("click", function () {
     fetch(url + randomPeep2)
         .then(res => res.json())
         .then(characterInfo => {
@@ -68,8 +72,8 @@ randButton2.addEventListener("click", function () {
             document.querySelectorAll(".weight")[1].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[1].innerHTML = "hair color: " + characterInfo.hair_color
         })
-})
-randButton3.addEventListener("click", function () {
+// })
+// randButton3.addEventListener("click", function () {
     fetch(url + randomPeep3)
         .then(res => res.json())
         .then(characterInfo => {
@@ -80,8 +84,8 @@ randButton3.addEventListener("click", function () {
             document.querySelectorAll(".weight")[2].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[2].innerHTML = "hair color: " + characterInfo.hair_color
         })
-})
-randButton4.addEventListener("click", function () {
+// })
+// randButton4.addEventListener("click", function () {
     fetch(url + randomPeep4)
         .then(res => res.json())
         .then(characterInfo => {
@@ -92,5 +96,28 @@ randButton4.addEventListener("click", function () {
             document.querySelectorAll(".weight")[3].innerHTML = "weight: " + characterInfo.mass
             document.querySelectorAll(".hair-color")[3].innerHTML = "hair color: " + characterInfo.hair_color
         })
-})
-// console.log(document.querySelectorAll(".name")[0].innerHTML)
+// })
+// randButton4.addEventListener("click", function () {
+    fetch(url + randomPeep5)
+    .then(res => res.json())
+    .then(characterInfo => {
+        console.log(characterInfo)
+        
+        // document.querySelectorAll(".name")[4].innerHTML = characterInfo.name
+        document.querySelectorAll(".height")[4].innerHTML = "height: " + characterInfo.height
+        document.querySelectorAll(".weight")[4].innerHTML = "weight: " + characterInfo.mass
+        document.querySelectorAll(".hair-color")[4].innerHTML = "hair color: " + characterInfo.hair_color
+    })
+// })
+// randButton4.addEventListener("click", function () {
+    fetch(url + randomPeep6)
+    .then(res => res.json())
+    .then(characterInfo => {
+        console.log(characterInfo)
+        
+        // document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
+        document.querySelectorAll(".height")[5].innerHTML = "height: " + characterInfo.height
+        document.querySelectorAll(".weight")[5].innerHTML = "weight: " + characterInfo.mass
+        document.querySelectorAll(".hair-color")[5].innerHTML = "hair color: " + characterInfo.hair_color
+    })
+// })
