@@ -51,10 +51,10 @@ function myFunction() {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            document.querySelectorAll(".name")[0].innerHTML = characterInfo.name
-            document.querySelectorAll(".height")[0].innerHTML = characterInfo.height
-            document.querySelectorAll(".weight")[0].innerHTML = characterInfo.mass
-            document.querySelectorAll(".hair-color")[0].innerHTML = characterInfo.hair_color
+            // document.querySelectorAll(".name")[0].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[0].innerHTML = "height: " + characterInfo.height
+            document.querySelectorAll(".weight")[0].innerHTML = "weight: " + characterInfo.mass
+            document.querySelectorAll(".hair-color")[0].innerHTML = "hair color: " + characterInfo.hair_color
         })
 })
 randButton2.addEventListener("click", function () {
@@ -63,10 +63,10 @@ randButton2.addEventListener("click", function () {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            document.querySelectorAll(".name")[1].innerHTML = characterInfo.name
-            document.querySelectorAll(".height")[1].innerHTML = characterInfo.height
-            document.querySelectorAll(".weight")[1].innerHTML = characterInfo.mass
-            document.querySelectorAll(".hair-color")[1].innerHTML = characterInfo.hair_color
+            // document.querySelectorAll(".name")[1].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[1].innerHTML = "height: " + characterInfo.height
+            document.querySelectorAll(".weight")[1].innerHTML = "weight: " + characterInfo.mass
+            document.querySelectorAll(".hair-color")[1].innerHTML = "hair color: " + characterInfo.hair_color
         })
 })
 randButton3.addEventListener("click", function () {
@@ -75,10 +75,10 @@ randButton3.addEventListener("click", function () {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            document.querySelectorAll(".name")[2].innerHTML = characterInfo.name
-            document.querySelectorAll(".height")[2].innerHTML = characterInfo.height
-            document.querySelectorAll(".weight")[2].innerHTML = characterInfo.mass
-            document.querySelectorAll(".hair-color")[2].innerHTML = characterInfo.hair_color
+            // document.querySelectorAll(".name")[2].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[2].innerHTML = "height: " + characterInfo.height
+            document.querySelectorAll(".weight")[2].innerHTML = "weight: " + characterInfo.mass
+            document.querySelectorAll(".hair-color")[2].innerHTML = "hair color: " + characterInfo.hair_color
         })
 })
 randButton4.addEventListener("click", function () {
@@ -87,10 +87,10 @@ randButton4.addEventListener("click", function () {
         .then(characterInfo => {
             console.log(characterInfo)
             
-            document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
-            document.querySelectorAll(".height")[3].innerHTML = characterInfo.height
-            document.querySelectorAll(".weight")[3].innerHTML = characterInfo.mass
-            document.querySelectorAll(".hair-color")[3].innerHTML = characterInfo.hair_color
+            // document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[3].innerHTML = "height: " + characterInfo.height
+            document.querySelectorAll(".weight")[3].innerHTML = "weight: " + characterInfo.mass
+            document.querySelectorAll(".hair-color")[3].innerHTML = "hair color: " + characterInfo.hair_color
         })
 })
-console.log(document.querySelectorAll(".name")[0].innerHTML)
+// console.log(document.querySelectorAll(".name")[0].innerHTML)

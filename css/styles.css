@@ -29,10 +29,26 @@
     color: white;
   } */
 
-
-
-
-
+h1 {
+    font-family: 'Geostar Fill', cursive;
+    font-size: 56px;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+button {
+    height: 45px;
+    width: 81px;
+}
+.charsect {
+    /* float: right; */
+}
+img {
+    float: left;
+    width: 200px;
+    height: auto;
+}
 
 
   /* Style the navigation menu */
@@ -73,7 +89,7 @@
   
   /* Style the active link (or home/logo) */
   .active {
-    background-color: #4CAF50;
+    background-color: red;
     color: white;
   }
 
