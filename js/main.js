@@ -35,11 +35,18 @@ function myFunction() {
 
 
  const url = "https://swapi.co/api/"
- const randButton = document.querySelector(".randomButton")
- let randomPeep = "people/13"
+ const randButton1 = document.querySelector(".randomButton1")
+ let randomPeep1 = "people/13"
+ const randButton2 = document.querySelector(".randomButton2")
+ let randomPeep2 = "people/14"
+ const randButton3 = document.querySelector(".randomButton3")
+ let randomPeep3 = "people/15"
+ const randButton4 = document.querySelector(".randomButton3")
+ let randomPeep4 = "people/20"
 
- randButton.addEventListener("click", function () {
-    fetch(url + randomPeep)
+
+ randButton1.addEventListener("click", function () {
+    fetch(url + randomPeep1)
         .then(res => res.json())
         .then(characterInfo => {
             console.log(characterInfo)
@@ -48,6 +55,42 @@ function myFunction() {
             document.querySelectorAll(".height")[0].innerHTML = characterInfo.height
             document.querySelectorAll(".weight")[0].innerHTML = characterInfo.mass
             document.querySelectorAll(".hair-color")[0].innerHTML = characterInfo.hair_color
+        })
+})
+randButton2.addEventListener("click", function () {
+    fetch(url + randomPeep2)
+        .then(res => res.json())
+        .then(characterInfo => {
+            console.log(characterInfo)
+            
+            document.querySelectorAll(".name")[1].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[1].innerHTML = characterInfo.height
+            document.querySelectorAll(".weight")[1].innerHTML = characterInfo.mass
+            document.querySelectorAll(".hair-color")[1].innerHTML = characterInfo.hair_color
+        })
+})
+randButton3.addEventListener("click", function () {
+    fetch(url + randomPeep3)
+        .then(res => res.json())
+        .then(characterInfo => {
+            console.log(characterInfo)
+            
+            document.querySelectorAll(".name")[2].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[2].innerHTML = characterInfo.height
+            document.querySelectorAll(".weight")[2].innerHTML = characterInfo.mass
+            document.querySelectorAll(".hair-color")[2].innerHTML = characterInfo.hair_color
+        })
+})
+randButton4.addEventListener("click", function () {
+    fetch(url + randomPeep4)
+        .then(res => res.json())
+        .then(characterInfo => {
+            console.log(characterInfo)
+            
+            document.querySelectorAll(".name")[3].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[3].innerHTML = characterInfo.height
+            document.querySelectorAll(".weight")[3].innerHTML = characterInfo.mass
+            document.querySelectorAll(".hair-color")[3].innerHTML = characterInfo.hair_color
         })
 })
 console.log(document.querySelectorAll(".name")[0].innerHTML)
