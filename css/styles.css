@@ -24,7 +24,10 @@
     overflow: hidden;
   }
 
-
+  /* .active, .panel:hover {
+    background-color: #666;
+    color: white;
+  } */
 
 
 
@@ -80,4 +83,3 @@
 
 
 
-  

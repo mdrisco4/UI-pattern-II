@@ -36,14 +36,18 @@ function myFunction() {
 
  const url = "https://swapi.co/api/"
  const randButton = document.querySelector(".randomButton")
- let randomPeep = "people/15"
+ let randomPeep = "people/13"
 
  randButton.addEventListener("click", function () {
     fetch(url + randomPeep)
         .then(res => res.json())
         .then(characterInfo => {
             console.log(characterInfo)
-
-            // document.querySelector(".randomCatImage").setAttribute('src', (catInfo[0].url))
+            
+            document.querySelectorAll(".name")[0].innerHTML = characterInfo.name
+            document.querySelectorAll(".height")[0].innerHTML = characterInfo.height
+            document.querySelectorAll(".weight")[0].innerHTML = characterInfo.mass
+            document.querySelectorAll(".hair-color")[0].innerHTML = characterInfo.hair_color
         })
 })
+console.log(document.querySelectorAll(".name")[0].innerHTML)
