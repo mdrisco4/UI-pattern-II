@@ -1,9 +1,12 @@
 /* Style the buttons that are used to open and close the accordion panel */
 body {
     background-image: url("../images/backgound6.jpeg");
-    background-size: cover;
-    /* background-color: darksalmon; */
-    /* width: auto; */
+    background-size: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black;
+    width: auto;
 }
 
 

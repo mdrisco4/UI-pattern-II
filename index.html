@@ -10,23 +10,11 @@
 </head>
 <body>
     <h1>STAR WARS</h1>
-    <!-- <nav>
-        <button class="randomButton1">Character 1</button>
-        <div class="randomChar"><img src="" class="starWarsPic"></div>
-        <button class="randomButton2">Character 2</button>
-        <div class="randomChar"><img src="" class="starWarsPic"></div>
-        <button class="randomButton3">Character 3</button>
-        <div class="randomChar"><img src="" class="starWarsPic"></div>
-        <button class="randomButton4">Character 4</button>
-        <div class="randomChar"><img src="" class="starWarsPic"></div>
-    </nav> -->
-
 
     <button class="accordion"></button>
     <div class="panel">
         <img src="images/chewbacca4.jpeg">
         <section class="charsect char1">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>
@@ -38,7 +26,6 @@
     <div class="panel">
         <img src="images/han-solo.jpeg">
         <section class="charsect char2">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>
@@ -50,7 +37,6 @@
     <div class="panel">
         <img src="images/greedo.jpeg">
         <section class="charsect char3">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>    
@@ -62,7 +48,6 @@
     <div class="panel">
         <img src="images/yoda.jpeg">
         <section class="charsect char4">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>    
@@ -74,7 +59,6 @@
     <div class="panel">
         <img src="images/luke3.jpeg">
         <section class="charsect char5">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>    
@@ -86,7 +70,6 @@
     <div class="panel">
         <img src="images/leia.jpeg">
         <section class="charsect char6">
-            <!-- <h3 class="name"></h3> -->
             <h3 class="height"></h3>
             <h3 class="weight"></h3>
             <h3 class="hair-color"></h3>    
@@ -97,3 +80,140 @@
 </body>
 <script src="js/main.js"></script>
 </html>
+
+
+
+
+
+<!-- import React, { Component } from 'react';
+import './App.css';
+import Tabs from './Tabs.js';
+import 'react-tabs/style/react-tabs.css'
+// import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+// import Header from './Header.js';
+
+
+
+class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      artist: '',
+      songs: []
+
+    };
+}
+componentDidMount() {         
+    fetch("http://www.songsterr.com/a/ra/songs.json?pattern=Marley")
+        .then(res => res.json())
+        .then(songInfo => {
+            // console.log(songInfo)
+            this.setState({ artist: [songInfo[0].artist.name] });
+            
+             songInfo.forEach(infoPack => {
+                this.state.songs.push(infoPack.title)    
+              })
+           })
+            // console.log(this.state.artist)
+            // console.log(this.state.songs)
+ }
+
+
+
+  render() {
+    
+    
+  return (
+    <div>
+      <h2>Music API</h2>
+      <Tabs artist={this.state.artist} songs={this.state.songs}/>
+      {/* <Tab songs={this.state.songs}/> */}
+    </div>
+    );
+  }
+}
+
+  export default App;
+  
+  
+      
+
+
+
+
+
+  import React, { Component } from 'react';
+// import Tab from './Tab';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs'
+import 'react-tabs/style/react-tabs.css'
+
+
+
+class Tabs1 extends Component {
+
+    
+    render() {
+        console.log(this.props.songs)
+        const items = this.props.songs.map((song) => 
+        <li>{song}</li> );
+    // {return <li 
+    //     item={song}
+    //     key={i}>
+    //     </li> });
+            console.log(items)
+
+
+
+            const displayPosts = (
+              <Tabs defaultIndex={0} /*onSelect={index => console.log(index)}*/>
+
+
+            <TabList>
+              <Tab>{ this.props.artist }</Tab>
+              <Tab>title2</Tab>
+              <Tab>title3</Tab>
+              <Tab>title4</Tab>
+              <Tab>title5</Tab>
+              <Tab>title6</Tab>
+              <Tab>title7</Tab>
+            </TabList>
+      
+            <TabPanel>
+              {/* <h2>{ this.state.songs }</h2> */}
+              <ul>
+                  { items }
+              </ul>
+            </TabPanel>
+            <TabPanel>
+              <h2>things2</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>things3</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>things4</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>things5</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>things6</h2>
+            </TabPanel>
+            <TabPanel>
+              <h2>things7</h2>
+            </TabPanel>
+          </Tabs>
+          )
+          return (
+              <div>
+                <button className="randButton" onClick={this.callSong}>click me</button>
+                <button className="songButton" onClick={this.populateSongs}>click me</button>
+                {/* <p>some other stuff</p> */}
+                  {displayPosts}
+            </div>
+        );
+    }
+}
+
+export default Tabs1; -->
